@@ -46,10 +46,6 @@ function scrollto(e) {
     }
 }
 
-function down() {
-    alert('Download started');
-}
-
 function discord() {
     window.open('https://discord.gg/PPmsazWqSn', '_blank');
 }
