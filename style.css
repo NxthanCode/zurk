@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+.load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loadlogo {
+    font-size: 80px;
+    color: #ff0000;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.1); }
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.9);
+    z-index: 1000;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+.navc {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoz {
+    font-size: 32px;
+    font-weight: 900;
+    color: #ff0000;
+    text-shadow: 0 0 20px #ff0000;
+}
+
+.logot {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ff0000;
+}
+
+.navm {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navi {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navi.active {
+    color: #ff0000;
+}
+
+.disbtn {
+    background: #ff0000;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navt {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 120px 20px 60px;
+}
+
+.herobg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 50%, rgba(255,0,0,0.1) 0%, transparent 50%);
+}
+
+.heroc {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.herologo {
+    margin-bottom: 30px;
+}
+
+.herologo .logoz {
+    font-size: 120px;
+    text-shadow: 0 0 50px #ff0000;
+    display: inline-block;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.herotitle {
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+.herotext {
+    font-size: 24px;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.herodesc {
+    font-size: 18px;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.herobtn {
+    margin-bottom: 40px;
+}
+
+.btn {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #cc0000;
+    transform: translateY(-3px);
+}
+
+.heroinfo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.infoi {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ff0000;
+}
+
+.infoi i {
+    font-size: 24px;
+}
+
+.infot {
+    font-weight: 600;
+}
+
+.sect {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.sectt {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #ff0000;
+}
+
+.sectst {
+    color: #888;
+    font-size: 18px;
+}
+
+.pics {
+    padding: 80px 20px;
+    background: #1a1a1a;
+}
+.picsgrid {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+.picc {
+    background: #111;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s;
+    width: 900px; 
+    height: 600px; 
+    margin: 40px auto;
+    border: 2px solid #333;
+}
+.picc:hover {
+    transform: translateY(-10px);
+}
+
+
+.pici {
+    width: 900px;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.pict {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.picd {
+    color: #888;
+}
+
+.contact {
+    padding: 100px 20px;
+    background: #0a0a0a;
+}
+
+.contactc {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contactcard {
+    background: #111;
+    border-radius: 20px;
+    padding: 60px 40px;
+}
+
+.contacti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.contacticon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #ff0000;
+}
+
+.contactt {
+    font-size: 24px;
+    color: white;
+}
+
+.contactd {
+    color: #888;
+}
+
+.contactb {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contactb:hover {
+    background: #cc0000;
+    transform: translateY(-3px);
+}
+
+.foot {
+    background: #000;
+    padding: 60px 20px 30px;
+    border-top: 1px solid #333;
+}
+
+.footc {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footlogo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.foott {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    color: #ff0000;
+}
+
+.footst {
+    color: #888;
+    font-size: 14px;
+}
+
+.footlinks {
+    display: flex;
+    gap: 30px;
+}
+
+.footlinks a {
+    color: white;
+    text-decoration: none;
+}
+
+.footlinks a:hover {
+    color: #ff0000;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+
+.footb {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    padding-top: 30px;
+    border-top: 1px solid #333;
+}
+
+@media (max-width: 950px) {
+    .picc {
+        width: 95vw;
+        height: calc(95vw * 0.6667); 
+    }
+    
+    .pici {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navm {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #0a0a0a;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .navm.active {
+        display: flex;
+    }
+    
+    .navt {
+        display: flex;
+    }
+    
+    .herotitle {
+        font-size: 48px;
+    }
+    
+    .sectt {
+        font-size: 36px;
+    }
+    
+    .footc {
+        flex-direction: column;
+        text-align: center;
+    }
+}
